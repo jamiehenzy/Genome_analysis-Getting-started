@@ -1,4 +1,4 @@
-## The NIBLSE bioinformatics core competencies for undergraduate life scientists.
+## The NIBLSE bioinformatics core competencies for undergraduate life scientists
 [PLoS One. 2018 Jun 5;13(6):e0196878](https://pmc.ncbi.nlm.nih.gov/articles/PMC5988330/#pone.0196878.t002)
 ### C1. Explain the role of computation and data mining in addressing hypothesis-driven and hypothesis-generating questions within the life sciences. 
 Life sciences students should have a clear understanding of the role computing and data mining play in modern biology. Given a traditional hypothesis-driven research question, students should have ideas about what types of data and software exist that could help them answer the question quickly and efficiently. They should also appreciate that mining large datasets can generate novel hypotheses to be tested in the lab or field.
