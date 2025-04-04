@@ -1,10 +1,10 @@
+# From Kushbu Patel, https://github.com/kpatel427
 # script to visualize gene expression data (GSE183947)
 # setwd("~/Desktop/demo/data_manipulation_R/scripts")
 
 # load libraries
 library(tidyverse)
 library(ggplot2)
-
 
 # data
 # dat.long to be used generated from previous demo
@@ -20,13 +20,11 @@ dat.long %>%
   ggplot(., aes(x = samples, y = FPKM, fill = tissue)) +
   geom_col()
 
-
 # 2. density
 dat.long %>%
   filter(gene == 'BRCA1') %>%
   ggplot(., aes(x = FPKM, fill = tissue)) +
   geom_density(alpha = 0.3)
-
 
 # 3. boxplot 
 dat.long %>%
@@ -35,7 +33,6 @@ dat.long %>%
   #geom_boxplot()
   geom_violin()
 
-
 # 4. scatterplot
 dat.long %>%
   filter(gene == 'BRCA1' | gene == 'BRCA2') %>%
@@ -43,7 +40,6 @@ dat.long %>%
   ggplot(., aes(x = BRCA1, y = BRCA2, color = tissue)) +
   geom_point() +
   geom_smooth(method = 'lm', se = FALSE)
-
 
 # 5. heatmap
 genes.of.interest <- c('BRCA1', 'BRCA2', 'TP53', 'ALK', 'MYCN')
